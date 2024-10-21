@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 // Font
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mobile/screens/login_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -34,6 +35,12 @@ class WelcomeScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 InkWell(
                   onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (contex) => LoginScreen()
+                      )
+                    );
                   },
                   child: Ink(
                     child: Container(
